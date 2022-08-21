@@ -23,7 +23,7 @@ public class SalesManager {
             throw new RuntimeException("Слишком малая статистика");
         }
 
-        int[] truncSales = sales.clone();
+        long[] truncSales = sales.clone();
         Arrays.sort(truncSales);
         int mean = 0;
         for (int i = 1; i < truncSales.length - 1; i++){
